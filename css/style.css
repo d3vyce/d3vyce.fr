@@ -12,10 +12,6 @@
   background-color: var(--dark-1);
 }
 
-.bg-dark-2 {
-  background-color: var(--dark-2);
-}
-
 .bg-dark-3 {
   background-color: var(--dark-3);
 }
@@ -112,17 +108,22 @@ a:hover {
   padding: 4rem;
 }
 
+.divider {
+  height: 0.2rem !important;
+  max-width: 3.25rem;
+  margin: 1.5rem auto;
+  background-color: var(--accent);
+  opacity: 1;
+}
+
 .badge:hover {
   background-color: white;
   color: black;
 }
 
-.modal-content {
-  background-color: var(--dark-2);
-}
+
 
 /* Header Section */
-
 @media (min-width: 992px) {
   header.masthead {
     height: 100vh;
@@ -152,11 +153,13 @@ a:hover {
     align-content: center;
   }
 }
+/* ------------ */
 
 /* About Section */
 .about {
   background-color: var(--dark-2);
 }
+/* ------------ */
 
 /* Skills Section */
 .skills {
@@ -167,6 +170,7 @@ a:hover {
   color: var(--accent);
   background-color: var(--accent);
 }
+/* ------------ */
 
 /* Projects Section */
 .projects {
@@ -214,6 +218,11 @@ a:hover {
   justify-content: center;
 }
 
+.modal-content {
+  background-color: var(--dark-2);
+}
+/* ------------ */
+
 /* Footer Section */
 .footer {
   background-color: var(--dark-1);
@@ -233,19 +242,7 @@ a:hover {
 .social{
   margin-bottom: 2rem;
 }
-/* ------------------------------------- */
-
-.text-white-75 {
-  color: rgba(255, 255, 255, 0.75) !important;
-}
-
-.divider {
-  height: 0.2rem !important;
-  max-width: 3.25rem;
-  margin: 1.5rem auto;
-  background-color: var(--accent);
-  opacity: 1;
-}
+/* ------------ */
 
 /* Scrollbar */
 ::-webkit-scrollbar {
@@ -258,3 +255,4 @@ a:hover {
 ::-webkit-scrollbar-track{
   background: transparent;
 }
+/* ------------ */
