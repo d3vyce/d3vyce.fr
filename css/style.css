@@ -12,6 +12,10 @@
   background-color: var(--dark-1);
 }
 
+.bg-dark-2 {
+  background-color: var(--dark-2);
+}
+
 .bg-dark-3 {
   background-color: var(--dark-3);
 }
@@ -116,12 +120,6 @@ a:hover {
   opacity: 1;
 }
 
-.badge:hover {
-  background-color: white;
-  color: black;
-}
-
-
 
 /* Header Section */
 @media (min-width: 992px) {
@@ -186,12 +184,12 @@ a:hover {
   padding-left: 0;
   border-radius: 6px;
   box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
-      transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+      transition: .8s transform cubic-bezier(.155,1.105,.295,1.12), .8s box-shadow, .8s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
   cursor: pointer;
 }
 
 .project:hover {
-  transform: scale(1.05);
+  transform: scale(1.02);
   box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
 }
 
