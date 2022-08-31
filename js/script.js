@@ -14,10 +14,6 @@ function reveal() {
 }
 
 window.addEventListener("scroll", reveal);
-
-  $(document).ready(function(){
-    init();
-  });
   
   function init(){
     //Auto margin calculator
