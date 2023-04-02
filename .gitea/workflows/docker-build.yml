@@ -6,8 +6,6 @@ jobs:
     steps:
     - name: Check out repository code
       uses: actions/checkout@v3
-    - test: test variable
-      run: echo "username: ${{ github.actor }}"
     - name: Build/Push
       run: |
         docker login -u ${{ github.actor }} -p ${{ secrets.GIT_TOKEN }} git.d3vyce.fr
