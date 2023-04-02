@@ -1,0 +1,17 @@
+name: Docker-build
+on: [push]
+jobs:
+  docker-build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Check out repository code
+      uses: actions/checkout@v3
+    - name: Set up Python 3.11
+      run: |
+        apt update
+        apt install -y docker.io             
+    - name: Build/Push
+      run: |
+        docker build -t d3vyce.fr .
+        docker tag d3vyce.fr 10.0.0.3:5000/d3vyce
+        docker push 10.0.0.3:5000/d3vyce
