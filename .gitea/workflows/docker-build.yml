@@ -11,7 +11,7 @@ jobs:
         apt update
         apt install -y docker.io
         echo '{ "insecure-registries":["10.0.0.3:5000"] }' > /etc/docker/daemon.json
-        service docker restart
+        systemctl restart docker.service
     - name: Build/Push
       run: |
         docker build -t d3vyce.fr .
