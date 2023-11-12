@@ -14,7 +14,7 @@ jobs:
         apt install -y docker.io         
     - name: Build/Push
       run: |
-        echo ${{ secrets.GIT_TOKEN }} | docker login -u ${{ github.actor }} --password-stdin git.d3vyce.fr
+        echo ${{ secrets.GIT_TOKEN }} | docker login -u ${{ github.actor }} --password-stdin git.mars.local
         docker build -t d3vyce.fr .
-        docker tag d3vyce.fr git.d3vyce.fr/d3vyce/d3vyce.fr:dev
-        docker push git.d3vyce.fr/d3vyce/d3vyce.fr:dev
+        docker tag d3vyce.fr git.mars.local/d3vyce/d3vyce.fr:dev
+        docker push git.mars.local/d3vyce/d3vyce.fr:dev
